@@ -4,6 +4,9 @@
    "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
    "main": "src/index.js",
    "scripts": {
+      "dev": "webpack --mode development",
+      "build": "webpack --mode production",
+      "start": "webpack serve --mode development --open --port 3000",
       "test": "echo \"Error: no test specified\" && exit 1"
    },
    "repository": {
@@ -16,5 +19,19 @@
    "bugs": {
       "url": "https://github.com/GerardoDev25/20-FrontEnd-Mentor--tip-calculator-app-main-JUNIOR/issues"
    },
-   "homepage": "https://github.com/GerardoDev25/20-FrontEnd-Mentor--tip-calculator-app-main-JUNIOR#readme"
+   "homepage": "https://github.com/GerardoDev25/20-FrontEnd-Mentor--tip-calculator-app-main-JUNIOR#readme",
+   "devDependencies": {
+      "@babel/core": "^7.14.6",
+      "@babel/preset-env": "^7.14.7",
+      "babel-loader": "^8.2.2",
+      "css-loader": "^6.0.0",
+      "file-loader": "^6.2.0",
+      "html-loader": "^2.1.2",
+      "html-webpack-loader": "0.0.5",
+      "image-webpack-loader": "^7.0.1",
+      "mini-css-extract-plugin": "^2.1.0",
+      "webpack": "^5.45.0",
+      "webpack-cli": "^4.7.2",
+      "webpack-dev-server": "^3.11.2"
+   }
 }
