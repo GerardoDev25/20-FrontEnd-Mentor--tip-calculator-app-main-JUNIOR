@@ -1,6 +1,34 @@
+/* *************************************  */
+/* ? ************* general *************  */
+/* *************************************  */
+
+:root {
+   --Strong-cyan: hsl(172, 67%, 45%);
+
+   /* ### Neutral */
+
+   --Very-dark-cyan: hsl(183, 100%, 15%);
+   --Dark-grayish-cyan: hsl(186, 14%, 43%);
+   --Dark-grayish-cyan2: hsl(184, 14%, 56%);
+   --Light-grayish-cyan: hsl(185, 41%, 84%);
+   --Light-grayish-cyan2: hsl(189, 41%, 97%);
+   --White: hsl(0, 0%, 100%);
+
+   --Zise-inputs: 24px;
+   font-family: 'Space Mono', monospace;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
 html,
 body {
    width: 100%;
-   height: 100%;
-   background-color: #aaa;
+   min-width: 375px;
+   height: auto;
+   min-height: 800px;
+   background-color: var(--Light-grayish-cyan);
 }
