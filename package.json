@@ -1,0 +1,20 @@
+{
+   "name": "20-frontend-mentor--tip-calculator-app-main-junior",
+   "version": "1.0.0",
+   "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+   "main": "src/index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GerardoDev25/20-FrontEnd-Mentor--tip-calculator-app-main-JUNIOR.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/GerardoDev25/20-FrontEnd-Mentor--tip-calculator-app-main-JUNIOR/issues"
+   },
+   "homepage": "https://github.com/GerardoDev25/20-FrontEnd-Mentor--tip-calculator-app-main-JUNIOR#readme"
+}
