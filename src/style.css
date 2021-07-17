@@ -67,7 +67,7 @@ body {
 /* *************************************  */
 
 .calculator {
-   outline: 2px dotted black;
+   /* outline: 2px dotted black; */
    display: grid;
    grid-template-rows: 25% 50% 25%;
 }
@@ -94,11 +94,111 @@ body {
    height: 2.7rem;
    text-align: right;
    padding-right: 1rem;
-   color: var(--Very-dark-cyan);
    outline: none;
    font-weight: 700;
+   color: var(--Very-dark-cyan);
    font-size: var(--Zise-inputs);
-   border-radius: 0.5rem;
    background-color: var(--Light-grayish-cyan2);
-   /* border: none; */
+   border-radius: 0.5rem;
+   border: none;
+}
+
+.calculator__select {
+   /* outline: 2px dotted red; */
+   display: flex;
+   flex-direction: column;
+}
+
+.calculator__container {
+   height: 90%;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat(3, 1fr);
+   gap: 1rem;
+}
+
+.calculator__percentage {
+   background-color: var(--Very-dark-cyan);
+   color: var(--White);
+   font-size: var(--Zise-inputs);
+   border-radius: 0.3rem;
+   font-weight: 700;
+   border: none;
+}
+
+.calculator__percentage--active {
+   background-color: var(--Strong-cyan);
+   color: var(--Very-dark-cyan);
+}
+
+.calculator__custom {
+   text-align: right;
+   height: 100%;
+   min-width: 9rem;
+   outline: none;
+   font-weight: 700;
+   color: var(--Very-dark-cyan);
+   font-size: var(--Zise-inputs);
+   background-color: var(--Light-grayish-cyan2);
+}
+.calculator__custom::placeholder {
+   color: var(--Dark-grayish-cyan);
+}
+
+.input__icon--people {
+   background-image: url(./images/icon-person.svg);
+}
+
+/* *************************************  */
+/* ? ************* result *************  */
+/* *************************************  */
+
+.result {
+   padding: 1rem;
+   padding-top: 1.5rem;
+   border-radius: 1rem;
+   background-color: var(--Very-dark-cyan);
+   color: var(--White);
+   display: grid;
+   grid-template-rows: 35% 40% 25%;
+}
+
+.price {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* outline: 2px dotted white; */
+   padding-bottom: 0.5rem;
+}
+
+.price__total {
+   font-weight: 700;
+}
+
+.price__detail {
+   display: block;
+   padding-top: 0.3rem;
+   font-weight: normal;
+   color: var(--Dark-grayish-cyan2);
+   font-size: 0.8rem;
+}
+
+.price__value {
+   color: var(--Strong-cyan);
+   font-size: var(--Zise-inputs);
+}
+
+.price__value::before {
+   content: "$";
+}
+
+.result__reset {
+   background-color: var(--Strong-cyan);
+   color: var(--Very-dark-cyan);
+   text-transform: uppercase;
+   font-size: 1.3rem;
+   font-weight: 700;
+   border: none;
+   border-radius: .4rem;
 }
