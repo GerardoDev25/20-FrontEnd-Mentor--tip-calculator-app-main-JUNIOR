@@ -14,32 +14,106 @@
          href="./images/favicon-32x32.png"
       />
 
+      <!-- ? google fonts -->
+      <link
+         rel="preconnect"
+         href="https://fonts.googleapis.com"
+      />
+      <link
+         rel="preconnect"
+         href="https://fonts.gstatic.com"
+         crossorigin
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+
       <title>Frontend Mentor | Tip calculator app</title>
    </head>
    <body>
-      <h1>status</h1>
-      <div>
-         <img src="./images/icon-person.svg" alt="" />
-      </div>
-     
-  Bill
+      <main class="main">
+         <h1 class="main__title">
+            <img
+               src="./images/logo.svg"
+               alt=""
+               class="main__logo"
+            />
+         </h1>
+         <div class="main__container">
+            <div class="calculator">
+               <section class="calculator__bill">
+                  <h2 class="calculator__title">Bill</h2>
+                  <label for="id-bill" class="input__container">
+                     <div class="input__icon "></div>
+                     <input
+                        type="text"
+                        class="calculator__input biil__input"
+                        id="id-bill"
+                     />
+                  </label>
+               </section>
+               <section class="calculator__select">
+                  <h2 class="calculator__title">Select Tip %</h2>
+                  <div class="calculator__container">
+                     <button class="calculator__percentage">
+                        5%</button
+                     ><button class="calculator__percentage">
+                        10%</button
+                     ><button class="calculator__percentage">
+                        15%</button
+                     ><button class="calculator__percentage">
+                        25%</button
+                     ><button class="calculator__percentage">
+                        50%
+                     </button>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
- <!-- 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-   --></body>
+                     <input
+                        type="text"
+                        class="calculator__custom"
+                        placeholder="Custom"
+                     />
+                  </div>
+               </section>
+               <section class="calclaror__people">
+                  <h2 class="calculator__title">
+                     Number of People
+                  </h2>
+                  <label for="id-bill" class="input__container">
+                     <div class="input__icon"></div>
+                     <input
+                        type="text"
+                        class="calculator__input people__input"
+                     />
+                  </label>
+               </section>
+            </div>
+            <div class="result">
+               <div class="price">
+                  <div class="price__left">
+                     <p class="price__total">
+                        Tip Amount
+                        <small class="price__detail">
+                           / person</small
+                        >
+                     </p>
+                  </div>
+                  <strong class="price__value">0</strong>
+               </div>
+               <div class="price">
+                  <div class="price__left">
+                     <p class="price__total">
+                        Total
+                        <small class="price__detail">
+                           / person</small
+                        >
+                     </p>
+                  </div>
+                  <strong class="price__value">0</strong>
+               </div>
+               <button class="result__reset">Reset</button>
+            </div>
+         </div>
+      </main>
+   </body>
 </html>
