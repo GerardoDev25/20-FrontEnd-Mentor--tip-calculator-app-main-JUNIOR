@@ -41,18 +41,25 @@
             />
          </h1>
          <div class="main__container">
+            <!-- ? CALCULATOR -->
             <div class="calculator">
+               <!-- ? section of bill -->
+
                <section class="calculator__bill">
                   <h2 class="calculator__title">Bill</h2>
                   <label for="id-bill" class="input__container">
-                     <div class="input__icon "></div>
+                     <div class="input__icon"></div>
                      <input
+                     tabindex="1"
                         type="text"
                         class="calculator__input biil__input"
                         id="id-bill"
                      />
                   </label>
                </section>
+
+               <!-- ? section of calculator -->
+
                <section class="calculator__select">
                   <h2 class="calculator__title">Select Tip %</h2>
                   <div class="calculator__container">
@@ -60,27 +67,40 @@
                         5%</button
                      ><button class="calculator__percentage">
                         10%</button
-                     ><button class="calculator__percentage">
+                     ><button
+                        class="
+                           calculator__percentage
+                           calculator__percentage--active
+                        "
+                     >
                         15%</button
                      ><button class="calculator__percentage">
                         25%</button
                      ><button class="calculator__percentage">
                         50%
                      </button>
-
                      <input
                         type="text"
-                        class="calculator__custom"
+                        class="
+                           calculator__percentage
+                           calculator__input
+                           calculator__custom
+                        "
                         placeholder="Custom"
                      />
                   </div>
                </section>
+
+               <!-- ? section of people -->
+
                <section class="calclaror__people">
                   <h2 class="calculator__title">
                      Number of People
                   </h2>
                   <label for="id-bill" class="input__container">
-                     <div class="input__icon"></div>
+                     <div
+                        class="input__icon input__icon--people"
+                     ></div>
                      <input
                         type="text"
                         class="calculator__input people__input"
@@ -88,7 +108,11 @@
                   </label>
                </section>
             </div>
+
+            <!-- ? RESULT -->
+
             <div class="result">
+               <!-- ? price -->
                <div class="price">
                   <div class="price__left">
                      <p class="price__total">
@@ -100,6 +124,9 @@
                   </div>
                   <strong class="price__value">0</strong>
                </div>
+
+               <!--  ? price -->
+
                <div class="price">
                   <div class="price__left">
                      <p class="price__total">
@@ -111,6 +138,9 @@
                   </div>
                   <strong class="price__value">0</strong>
                </div>
+
+               <!-- ? result__price -->
+
                <button class="result__reset">Reset</button>
             </div>
          </div>
