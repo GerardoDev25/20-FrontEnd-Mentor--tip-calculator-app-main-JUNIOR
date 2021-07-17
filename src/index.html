@@ -29,7 +29,6 @@
          rel="stylesheet"
       />
 
-      
       <title>Frontend Mentor | Tip calculator app</title>
    </head>
    <body>
@@ -41,14 +40,18 @@
                class="main__logo"
             />
          </h1>
-         <div class="pit-calculator">
+         <div class="main__container">
             <div class="calculator">
                <section class="calculator__bill">
                   <h2 class="calculator__title">Bill</h2>
-                  <input
-                     type="text"
-                     class="calculator__input biil__input"
-                  />
+                  <label for="id-bill" class="input__container">
+                     <div class="input__icon "></div>
+                     <input
+                        type="text"
+                        class="calculator__input biil__input"
+                        id="id-bill"
+                     />
+                  </label>
                </section>
                <section class="calculator__select">
                   <h2 class="calculator__title">Select Tip %</h2>
@@ -64,6 +67,7 @@
                      ><button class="calculator__percentage">
                         50%
                      </button>
+
                      <input
                         type="text"
                         class="calculator__custom"
@@ -75,10 +79,13 @@
                   <h2 class="calculator__title">
                      Number of People
                   </h2>
-                  <input
-                     type="text"
-                     class="calculator__input people__input"
-                  />
+                  <label for="id-bill" class="input__container">
+                     <div class="input__icon"></div>
+                     <input
+                        type="text"
+                        class="calculator__input people__input"
+                     />
+                  </label>
                </section>
             </div>
             <div class="result">
