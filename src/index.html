@@ -40,7 +40,7 @@
                class="main__logo"
             />
          </h1>
-         <div class="main__container">
+         <form class="main__container" id="form">
             <!-- ? CALCULATOR -->
             <div class="calculator">
                <!-- ? section of bill -->
@@ -50,7 +50,7 @@
                   <label for="id-bill" class="input__container">
                      <div class="input__icon"></div>
                      <input
-                     tabindex="1"
+                        tabindex="1"
                         type="text"
                         class="calculator__input biil__input"
                         id="id-bill"
@@ -141,9 +141,20 @@
 
                <!-- ? result__price -->
 
-               <button class="result__reset">Reset</button>
+               <input
+                  class="result__reset"
+                  type="reset"
+                  value="reset"
+                  disabled
+               />
+
+               <!-- <button
+                  class="result__reset result__reset--desabled"
+               >
+                  Reset
+               </button> -->
             </div>
-         </div>
+         </form>
       </main>
    </body>
 </html>
