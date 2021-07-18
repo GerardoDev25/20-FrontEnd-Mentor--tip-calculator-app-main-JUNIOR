@@ -47,13 +47,16 @@
 
                <section class="calculator__bill">
                   <h2 class="calculator__title">Bill</h2>
-                  <label for="id-bill" class="input__container">
+                  <label
+                     for="input-bill"
+                     class="input__container"
+                  >
                      <div class="input__icon"></div>
                      <input
                         tabindex="1"
-                        type="text"
+                        type="number"
                         class="calculator__input biil__input"
-                        id="id-bill"
+                        id="input-bill"
                      />
                   </label>
                </section>
@@ -63,30 +66,44 @@
                <section class="calculator__select">
                   <h2 class="calculator__title">Select Tip %</h2>
                   <div class="calculator__container">
-                     <button class="calculator__percentage">
+                     <button
+                        class="calculator__percentage"
+                        data-value="5"
+                     >
                         5%</button
-                     ><button class="calculator__percentage">
+                     ><button
+                        class="calculator__percentage"
+                        data-value="10"
+                     >
                         10%</button
                      ><button
                         class="
                            calculator__percentage
                            calculator__percentage--active
                         "
+                        data-value="15"
                      >
                         15%</button
-                     ><button class="calculator__percentage">
+                     ><button
+                        class="calculator__percentage"
+                        data-value="25"
+                     >
                         25%</button
-                     ><button class="calculator__percentage">
+                     ><button
+                        class="calculator__percentage"
+                        data-value="50"
+                     >
                         50%
                      </button>
                      <input
-                        type="text"
+                        type="number"
                         class="
                            calculator__percentage
                            calculator__input
                            calculator__custom
                         "
                         placeholder="Custom"
+                        id="input-custom"
                      />
                   </div>
                </section>
@@ -97,13 +114,17 @@
                   <h2 class="calculator__title">
                      Number of People
                   </h2>
-                  <label for="id-bill" class="input__container">
+                  <label
+                     for="input-people"
+                     class="input__container"
+                  >
                      <div
                         class="input__icon input__icon--people"
                      ></div>
                      <input
-                        type="text"
+                        type="number"
                         class="calculator__input people__input"
+                        id="input-people"
                      />
                   </label>
                </section>
@@ -146,6 +167,7 @@
                   type="reset"
                   value="reset"
                   disabled
+                  id="input-reset"
                />
 
                <!-- <button
