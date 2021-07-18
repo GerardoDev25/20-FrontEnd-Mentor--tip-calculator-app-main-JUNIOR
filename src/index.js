@@ -68,6 +68,7 @@ inputPeople.addEventListener("keyup", (e) => {
    //    }
 });
 
+
 // * form
 form.addEventListener("submit", (e) => {
    e.preventDefault();
