@@ -57,7 +57,9 @@
                         type="number"
                         class="calculator__input biil__input"
                         id="input-bill"
+                        min="0"
                      />
+                     <!-- onkeypress="return event.charCode >= 48" -->
                   </label>
                </section>
 
@@ -77,10 +79,7 @@
                      >
                         10%</button
                      ><button
-                        class="
-                           calculator__percentage
-                           calculator__percentage--active
-                        "
+                        class="calculator__percentage"
                         data-value="15"
                      >
                         15%</button
@@ -104,6 +103,9 @@
                         "
                         placeholder="Custom"
                         id="input-custom"
+                        min="0"
+                        max="100"
+                        onkeypress="return event.charCode >= 48"
                      />
                   </div>
                </section>
@@ -125,6 +127,8 @@
                         type="number"
                         class="calculator__input people__input"
                         id="input-people"
+                        min="0"
+                        onkeypress="return event.charCode >= 48"
                      />
                   </label>
                </section>
@@ -143,7 +147,9 @@
                         >
                      </p>
                   </div>
-                  <strong class="price__value">0</strong>
+                  <strong id="price1" class="price__value"
+                     >0</strong
+                  >
                </div>
 
                <!--  ? price -->
@@ -157,7 +163,9 @@
                         >
                      </p>
                   </div>
-                  <strong class="price__value">0</strong>
+                  <strong id="price2" class="price__value"
+                     >0</strong
+                  >
                </div>
 
                <!-- ? result__price -->
